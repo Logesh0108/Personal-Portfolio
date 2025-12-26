@@ -16,9 +16,4 @@ https://logesh0108.github.io/Personal-Portfolio/
 
 ---
 
-## 🖥️ Preview
 
-> *(Add screenshots if available)*  
-You can place images inside a folder like `assets/images/` and update paths below.
-
-```md

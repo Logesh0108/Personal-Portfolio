@@ -157,3 +157,27 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// EmailJS integration for contact form
+  emailjs.init("cqzWYRT0TPpUT1K78");
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    console.log("Form submitted");
+
+    emailjs.sendForm(
+      "service_e1ytbkg",
+      "template_jm7a6vn",
+      this
+    ).then(
+      function () {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+      },
+      function (error) {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message");
+      }
+    );
+  });
